@@ -1,8 +1,8 @@
 # Create tables
 cd tpch-dbgen
 make
-./dbgen -f -s $1
-mv *.tbl ../tables
+./dbgen -T L -f -s $1
+mv lineitem.tbl ../tables
 cd ../tables
 
 echo "Formatting..."
