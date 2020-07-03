@@ -23,7 +23,7 @@ def gen_lineitem(table_name):
     print("Cleaning up csv file")
     tbl_file = table_name + ".tbl"
     data_file = table_name + ".data"
-    dfs = pd.read_csv(tbl_file, sep='|', header=None, index_col=False, chunksize=5000000, usecols=[0, 4, 5, 6, 7, 8, 9, 10])
+    dfs = pd.read_csv(tbl_file, sep='|', header=None, index_col=False, chunksize=5000000, usecols=[0, 4, 5, 6, 7, 8, 9, 10, 11, 12])
     first = True
     returnflag_dict = {}
     linestatus_dict = {}
